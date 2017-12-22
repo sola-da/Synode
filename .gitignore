@@ -1,0 +1,4 @@
+.idea/*
+static/google-closure-based/injections-string-analysis/bin/*
+static/google-closure-based/injections-string-analysis/results/*
+static/google-closure-based/.metadata

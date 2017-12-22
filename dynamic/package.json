@@ -1,0 +1,15 @@
+{
+  "name": "synode",
+  "version": "0.0.1",
+  "description": "A solution for protecting against injection vulnerabilities in 3rd party modules",
+  "author": "Cristian-Alexandru Staicu <cris.staicu@gmail.com>",
+  "bin": {
+    "synode": "./bin/refactor-package.js"
+  },
+  "dependencies" : {
+    "esprima": "4.0.0",
+    "escodegen": "1.9.0",
+    "shell-parse": "0.0.2"
+  },
+  "main": "./lib/policyChecker.js"
+}

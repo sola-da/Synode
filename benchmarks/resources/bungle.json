@@ -1,0 +1,24 @@
+{
+  "bungle": {
+    "logger": {
+      "console": "debug",
+      "notify": "debug"
+    },
+    "reset": true
+  },
+  "profiles": {
+    "default": {
+      "description": "Build package.",
+      "config": {
+      }
+    }
+  },
+  "pipes": {
+    "reader": {
+      "description": "Read files from disk.",
+      "type": "file-reader",
+      "debug":true,
+      "pattern": "attacks/*"
+    }
+  }
+}

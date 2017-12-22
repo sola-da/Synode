@@ -1,0 +1,2 @@
+var exec = /.*/.exec;
+exec();

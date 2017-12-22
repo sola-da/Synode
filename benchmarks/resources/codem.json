@@ -1,0 +1,10 @@
+{
+  "port":        8080,
+  "access_log":  "/tmp/access_log",
+  "database":    "/tmp/jobs.db",
+  "slots":       8,
+  "interface":   "127.0.0.1",
+  "encoder":     "ffmpeg",
+  "scratch_dir": "/tmp",
+  "ffprobe"    :  "true"
+}

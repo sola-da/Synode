@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project injections-string-analysis with Jar-in-Jar Loader">
+    <!--this file was created by Eclipse Runnable JAR file Export Wizard-->
+    <!--ANT 1.7 is required-->
+    <!--define folder properties-->
+    <property name="dir.buildfile" value="."/>
+    <property name="dir.workspace" value="/home/cstaicu/workspace/synode"/>
+    <property name="dir.jarfile" value="/home/cstaicu/work/github-repos/Synode/dynamic/depd"/>
+    <target name="create_run_jar">
+        <jar destfile="${dir.jarfile}/static-analysis.jar">
+            <manifest>
+                <attribute name="Main-Class" value="org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader"/>
+                <attribute name="Rsrc-Main-Class" value="de.tudarmstadt.sola.command.injections.Main"/>
+                <attribute name="Class-Path" value="."/>
+                <attribute name="Rsrc-Class-Path" value="./ closure-compiler-v20160713.jar commons-lang3-3.4.jar gson-2.7.jar junit.jar org.hamcrest.core_1.3.0.v201303031735.jar"/>
+            </manifest>
+            <zipfileset src="jar-in-jar-loader.zip"/>
+            <fileset dir="${dir.buildfile}/injections-string-analysis/bin"/>
+            <zipfileset dir="${dir.buildfile}/injections-string-analysis/lib" includes="closure-compiler-v20160713.jar"/>
+            <zipfileset dir="${dir.buildfile}/injections-string-analysis/lib" includes="commons-lang3-3.4.jar"/>
+            <zipfileset dir="${dir.buildfile}/injections-string-analysis/lib" includes="gson-2.7.jar"/>
+            <zipfileset dir="/home/cstaicu/.p2/pool/plugins/org.junit_4.12.0.v201504281640" includes="junit.jar"/>
+            <zipfileset dir="/home/cstaicu/.p2/pool/plugins" includes="org.hamcrest.core_1.3.0.v201303031735.jar"/>
+        </jar>
+    </target>
+</project>
