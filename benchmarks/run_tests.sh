@@ -6,8 +6,12 @@ sudo ./node_modules/n/bin/n 5.7.1
 node ./TestsNode5.7.1.js
 sudo ./node_modules/n/bin/n 0.10.47
 node ./TestsNode0.10.47.js
+#这一步就有out.txt了，此处只涉及到benchmark中的代码，那么先把这部分讲清楚。
 mv resources/out.txt resources/out-without-synode.txt
 
+# 然后dynamic和静态的好像在前述的模型分析中已经讲得很透彻，
+#这里只需把它的实现讲清楚，从benchmark到静态的输出是什么，
+#这一步又是如何输入到dynamic中实现动态部分的检测和自动修复的，整体逻辑讲清楚就行。
 synode ./node_modules/gm
 synode ./node_modules/libnotify
 synode ./node_modules/codem-transcode

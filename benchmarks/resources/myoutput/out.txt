@@ -1,0 +1,2 @@
+                                                 === Test results ===
+                                   TestMixinPro.js            0/2 false

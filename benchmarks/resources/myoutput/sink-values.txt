@@ -1,0 +1,16 @@
+test:mixin-pro
+*****
+[malicious][eval:/home/pc12/ming/Synode/benchmarks/node_modules/mixin-pro/mixin.js:161]function f(){}; console['my-awesome-prop-23-42'] = 23; //() { var c = ctor.constructors; for (var i in c) { c[i].apply(this, arguments); } };
+*****
+[malicious][eval:/home/pc12/ming/Synode/benchmarks/node_modules/mixin-pro/mixin.js:162]f(){}; console['my-awesome-prop-23-42'] = 23; //
+*****
+[malicious][eval:/home/pc12/ming/Synode/benchmarks/node_modules/mixin-pro/mixin.js:161]function f(){}; Object.defineProperty(console, 'my-awesome-prop-23-42',{value:23}); //() { var c = ctor.constructors; for (var i in c) { c[i].apply(this, arguments); } };
+*****
+[malicious][eval:/home/pc12/ming/Synode/benchmarks/node_modules/mixin-pro/mixin.js:162]f(){}; Object.defineProperty(console, 'my-awesome-prop-23-42',{value:23}); //
+*****
+[benign][eval:/home/pc12/ming/Synode/benchmarks/node_modules/mixin-pro/mixin.js:161]function benignFunctionName() { var c = ctor.constructors; for (var i in c) { c[i].apply(this, arguments); } };
+*****
+[benign][eval:/home/pc12/ming/Synode/benchmarks/node_modules/mixin-pro/mixin.js:162]benignFunctionName
+*****
+test:mixin-pro
+*****

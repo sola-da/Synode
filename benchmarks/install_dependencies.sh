@@ -1,9 +1,12 @@
+# installed 
 sudo apt-get install mongodb-org
 sudo apt-get install mongodb-server
 sudo apt-get install mongodb-clients
 sudo apt-get install mosquitto
 sudo apt-get install libkrb5-dev
 sudo apt-get install krb5-user
+
+# failed
 mongo localhost:27017/blog --eval "db.createCollection('blog');"
 
 npm install n
@@ -11,13 +14,19 @@ sudo ./node_modules/n/bin/n 5.7.1
 sudo ./node_modules/n/bin/n 0.10.47
 
 sudo ./node_modules/n/bin/n 5.7.1
-npm install request@2.2.9
+
+npm install request@2.2.9 # deprecated
 npm install sprintf-js@1.0.3
 npm install superagent@3.3.2
+#npm WARN deprecated superagent@3.3.2: Please upgrade to v7.0.2+ of superagent.  
+#We have fixed numerous issues with streams, form-data, attach(), filesystem errors not bubbling up (ENOENT on attach()), and all tests are now passing.  
+#See the releases tab for more information at <https://github.com/visionmedia/superagent/releases>.
+#npm WARN deprecated formidable@1.2.6: Please upgrade to latest, formidable@v2 or formidable@v3! Check these notes: https://bit.ly/2ZEqIau
 sudo ./node_modules/n/bin/n 0.10.47
 # advisories
 npm install gm@1.20.0 
 npm install libnotify@1.0.3
+# outdated
 npm install codem-transcode@0.4.4
 npm install printer@0.0.1
 # reported

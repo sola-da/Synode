@@ -6,9 +6,9 @@
   "bin": {
     "synode": "./bin/refactor-package.js"
   },
-  "dependencies" : {
-    "esprima": "4.0.0",
+  "dependencies": {
     "escodegen": "1.9.0",
+    "esprima": "^4.0.0",
     "shell-parse": "0.0.2"
   },
   "main": "./lib/policyChecker.js"

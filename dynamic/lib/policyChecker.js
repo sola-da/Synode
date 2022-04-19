@@ -28,9 +28,11 @@ module.exports.exec = function (fct, arg) {
     if (fct === require("child_process").exec) {
         console.log("Will autosanitize this call.");
         try {
+            console.log("in try catch");
             var templatesFile = arguments[arguments.length - 2];
             var lineNo = arguments[arguments.length - 1];
             var templates = JSON.parse(fs.readFileSync(templatesFile).toString());
+            console.log("log arguments",templatesFile,lineNo,templates);
             var actTemps = [];
             for (var i = 0; i < templates.length; i++) {
                 if (templates[i].lineNo == lineNo)

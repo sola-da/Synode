@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "autolint": "^1.1.4",
+    "chook-growl-reporter": "^0.0.1",
+    "fish": "^0.0.0",
+    "git2json": "^0.0.1",
+    "gm": "^1.20.0",
+    "growl": "^1.9.2",
+    "keepass-dmenu": "^1.3.1",
+    "kerb_request": "^0.0.2",
+    "libnotify": "^1.0.3",
+    "m-log": "^0.0.1",
+    "mixin-pro": "^0.6.6",
+    "mobile-icon-resizer": "^0.4.2",
+    "mock2easy": "^0.0.19",
+    "modulify": "^0.1.0-1",
+    "mol-proto": "^0.2.0",
+    "mongo-edit": "^0.6.0",
+    "mongo-parse": "^1.0.5",
+    "mongoosify": "^0.0.3",
+    "mongui": "^0.2.24",
+    "mqtt": "^0.3.1",
+    "mqtt-growl": "^0.1.0",
+    "n": "^7.5.0",
+    "request": "^2.2.9",
+    "sprintf-js": "^1.0.3",
+    "superagent": "^3.3.2"
+  }
+}

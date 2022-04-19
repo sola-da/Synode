@@ -21,28 +21,30 @@
  *
  * Created by Cristian-Alexandru Staicu on 03.03.16.
  */
-var tests = [
-    {"name": "gm", "test": "./TestGm"},
-    {"name": "libnotify", "test": "./TestLibnotify"},
-    {"name": "printer", "test": "./TestPrinter"},
-    {"name": "mixin-pro", "test": "./TestMixinPro"},
-    {"name": "modulify", "test": "./TestModulify"},
-    {"name": "mol-proto", "test": "./TestMolProto"},
-    {"name": "mongoosify", "test": "./TestMongosify"},
-    {"name": "mobile-icon-resizer", "test": "./TestMobileIconResizer"},
-    {"name": "m-log", "test": "./TestMLog"},
-    {"name": "mongo-parse", "test": "./TestMongoParse"},
-    {"name": "mongoosemask", "test": "./TestMongooseMask"},
-    {"name": "mongui", "test": "./TestMongui"},
-    {"name": "mongo-edit", "test": "./TestMongoEdit"},
-    {"name": "mock2easy", "test": "./TestMock2Easy"},
-    {"name": "growl", "test": "./TestGrowl"},
-    {"name": "mqtt-growl", "test": "./TestMqtt"},
-    {"name": "chook-growl-reporter", "test": "./TestChookGrowlReporter"},
-    {"name": "bungle", "test": "./TestBungle"},
-    {"name": "fish", "test": "./TestFish"},
-    {"name": "git2json", "test": "./TestGit2Json"},
-    {"name": "kerb_request", "test": "./TestKerbRequest"},
-    {"name": "keepass-dmenu", "test": "./TestKeepassDmenu"}
-];
+var tests = [{ name: "mixin-pro", test: "./TestMixinPro" }];
+// var tests = [
+//     {"name": "gm", "test": "./TestGm"},
+//     {"name": "libnotify", "test": "./TestLibnotify"},
+//     {"name": "printer", "test": "./TestPrinter"},
+//     {"name": "mixin-pro", "test": "./TestMixinPro"},
+//     {"name": "modulify", "test": "./TestModulify"},
+//     {"name": "mol-proto", "test": "./TestMolProto"},
+//     {"name": "mongoosify", "test": "./TestMongosify"},
+//     {"name": "mobile-icon-resizer", "test": "./TestMobileIconResizer"},
+//     {"name": "m-log", "test": "./TestMLog"},
+//     {"name": "mongo-parse", "test": "./TestMongoParse"},
+//     {"name": "mongoosemask", "test": "./TestMongooseMask"},
+//     {"name": "mongui", "test": "./TestMongui"},
+//     {"name": "mongo-edit", "test": "./TestMongoEdit"},
+//     {"name": "mock2easy", "test": "./TestMock2Easy"},
+//     {"name": "growl", "test": "./TestGrowl"},
+//     {"name": "mqtt-growl", "test": "./TestMqtt"},
+//     {"name": "chook-growl-reporter", "test": "./TestChookGrowlReporter"},
+//     {"name": "bungle", "test": "./TestBungle"},
+//     {"name": "fish", "test": "./TestFish"},
+//     {"name": "git2json", "test": "./TestGit2Json"},
+//     {"name": "kerb_request", "test": "./TestKerbRequest"},
+//     {"name": "keepass-dmenu", "test": "./TestKeepassDmenu"}
+// ];
 require("./RunTests.js")(tests, "./resources/out.txt", true);
+//require("../dynamic/lib/policyChecker.js")

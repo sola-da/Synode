@@ -21,33 +21,42 @@
  *
  * Created by Cristian-Alexandru Staicu on 03.03.16.
  */
+
+//cb pass a function
 module.exports = function (cb) {
+  console.log("in testmixinpro");
+  // what's the work of this func
+  var attackUtils = require("./AttackUtils.js");
+  //wrapper
+  attackUtils.setup();
 
-    var attackUtils = require("./AttackUtils.js");
-    attackUtils.setup();
+  var mixin = require("mixin-pro");
 
-    var mixin = require("mixin-pro");
+  var x = {};
 
-    var x = {};
+  attackUtils.deliverPayloads(
+    attackUtils.payloadsEval,
+    //payload ='console[\'my-awesome-prop-23-42\'] = 23;'
+    function (payload) {
+      function Foo() {}
 
-    attackUtils.deliverPayloads(attackUtils.payloadsEval, function (payload) {
-        function Foo() {
-        }
+      Object.defineProperty(Foo, "name", {
+        value: "f(){}; " + payload + " //",
+      });
+      console.log(Foo);
+      mixin(Foo, x);
+    },
+    function (result, filesWithSinks) {
+      function Foo() {}
 
-        Object.defineProperty(Foo, "name", {value: "f(){}; " + payload + " //"});
+      var benignInput = "benignFunctionName";
+      Object.defineProperty(Foo, "name", { value: benignInput });
+      try {
         mixin(Foo, x);
-    }, function (result, filesWithSinks) {
-        function Foo() {
-        }
-
-        var benignInput = "benignFunctionName";
-        Object.defineProperty(Foo, "name", {value: benignInput});
-        try {
-            mixin(Foo, x);
-        } catch (e) {
-        }
-        attackUtils.printCallStrings();
-        result += " " + attackUtils.observedString(benignInput);
-        cb(__filename, result, filesWithSinks);
-    });
+      } catch (e) {}
+      attackUtils.printCallStrings();
+      result += " " + attackUtils.observedString(benignInput);
+      cb(__filename, result, filesWithSinks);
+    }
+  );
 };

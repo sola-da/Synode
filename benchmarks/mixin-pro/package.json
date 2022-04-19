@@ -1,0 +1,54 @@
+{
+  "name": "mixin-pro",
+  "description": "Javascript multi-inheritance with mixin for code reuse",
+  "version": "0.6.6",
+  "author": {
+    "name": "Raymond Xie",
+    "email": "rjfun.mobile@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/floatinghotpot/mixin-pro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/floatinghotpot/mixin-pro/issues"
+  },
+  "keywords": [
+    "mixin",
+    "inherit",
+    "multi-inherit",
+    "extend",
+    "multiple",
+    "rjfun"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.4.0"
+  },
+  "main": "./mixin.js",
+  "gitHead": "9ca293455d6bb7cd163785afc157cbfcb9a6d957",
+  "homepage": "https://github.com/floatinghotpot/mixin-pro#readme",
+  "_id": "mixin-pro@0.6.6",
+  "scripts": {},
+  "_shasum": "8cb13b6945c46b3c29c74c7e46ee9f24651d9aae",
+  "_from": "mixin-pro@0.6.6",
+  "_npmVersion": "2.14.7",
+  "_nodeVersion": "4.2.1",
+  "_npmUser": {
+    "name": "floatinghotpot",
+    "email": "rjfun.mobile@gmail.com"
+  },
+  "dist": {
+    "shasum": "8cb13b6945c46b3c29c74c7e46ee9f24651d9aae",
+    "tarball": "https://registry.npmjs.org/mixin-pro/-/mixin-pro-0.6.6.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "floatinghotpot",
+      "email": "rjfun.mobile@gmail.com"
+    }
+  ],
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/mixin-pro/-/mixin-pro-0.6.6.tgz",
+  "readme": "ERROR: No README data found!"
+}
